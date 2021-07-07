@@ -63,7 +63,7 @@ def scrape():
     tables
     df = tables [0]
   
-    html_table = df.to_html()
+    html_table = df.to_html(classes=["table-bordered", "table-striped", "table-hover"])
     
 
 
