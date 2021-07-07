@@ -20,9 +20,26 @@
         <p><a class="btn btn-success btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
     <div class="container">
-        <h1 class="display-4"><b>Latest Mars News</b></h1>
-        <h5 style="color: #dc2814">{{mars_data.news_title}}</h5>
-        <p style="color: #cf4f0a">{{mars_data.news_p}}</p>
-    </div>
+        <div class="row" id="mars-news">
+            <div class="col-lg-12"
+            <div class="media">
+                <div class="media-body">
+                    <h4>Latest Mars News</h4>
+                    <h5 style="color: #dc2814">{{mars_data.news_title}}</h5>
+                    <p style="color: #cf4f0a">{{mars_data.news_paragraph}}</p>
+                </div>
+                <div class="container">
+                    <div class="row" id="featured_img">
+                        <div class="col-lg-8">
+                            <h4>Featured Mars Image</h4>
+                            <img src="{{mars_data.featured_image}}" class="img-responsive"
+                                style="max-width:100%; max-height: auto;" alt="Mars Featured Image" />
+                                <div class="col-lg-4">
+                                    <h5>Mars Facts</h5>
+                                    <p>{{mars_data.fact_table}}</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
 
 </body>

@@ -92,7 +92,8 @@ def scrape():
         'news_title': news_title, 
         'news_paragraph': news_p,
         'hemisphere_list': hemisphere_list,
-        'featured_image': photo_url
+        'featured_image': photo_url,
+        'fact_table': html_table
     }
     return mars_dict
 if __name__ == '__main__':
